@@ -1,0 +1,40 @@
+/*selector de etiquetas*/
+div { background: red;
+    color: white}
+    
+
+/*selector de clases*/
+.black {
+    background-color: black;
+}
+.subrayado {
+    text-decoration: underline;
+}
+
+/*selector de id*/
+
+#p1 {
+  color: black;
+   background-color: yellow;
+}
+
+.primerDiv p {
+  font-size: 32px;
+  color: black;
+}
+
+p {
+  color:darkblue;
+}
+
+.primerDiv > span {
+  font-size: 64px;
+  color: black;
+}
+
+.p3 {
+    text-decoration: underline;
+} 
+.p3:hover {
+    text-decoration: underline;
+} 
