@@ -1,0 +1,69 @@
+* {
+ box-sizing: border-box; /* border de afuera a dentro*/ 
+}
+
+.container {
+    border:10px solid #ccc;
+    max-width: 80px;
+    height: 600px;
+    margin: 20px;
+    position: relative;
+}
+
+.position {
+    border: 5px solid black;
+    width: 100px;
+    height: 100px;
+    /* margin: 5px */
+}
+
+/* */ 
+.static {
+    background-color: #0ac837;
+    /*   display: inline;   block ocupata todo, inline -> en linea y solo el espacio del contenido   */
+    /* The element is positioned according to the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value. */
+}    
+
+.absolute {
+    background-color: #a59777;
+    /*display: inline;*/ 
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* necesita encontrar un relative para funcionar en este caso un container relative */
+    /* sino existe position relative toma como referencia el origin del marco (esquinas)  */
+
+     
+    
+}
+
+.relative {
+    background-color: #7daabb;
+    position: relative;
+    bottom: 0;
+    left: 100px;
+
+    /* se mueve conforme a la position anterior y deja el espacio sin ocupar*/
+
+}
+
+.fixed {
+    background-color: rgb(231 108 80 / 60%); /*nueva manera de poner transparencia sin coma y / número% */
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    /* toma como referencia el viewport no el contenedor padre o el body */
+}
+
+.sticky {
+    background-color: #00000088; /*expresión hexadecimal 16 en 16*/
+    position: sticky;
+    /* se mueve estre los margenes del padre ene este caso el container */
+    /* cuando no se  puede scroll se coloca arriba pero si hay scroll se queda fijo */
+    top: 200px;
+    right: 0;
+}
+
+
