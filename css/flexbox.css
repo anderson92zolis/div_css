@@ -1,0 +1,20 @@
+.padre {
+    max-width: 90%;
+    height: 600px;
+    border: 10px solid black;
+    display: flex; /* crea flexibilidad en  por defecto horizontal a menos que haya flex-direction: */
+    /*flex-direction: column;*/
+    /*justify-content: space-between; coje el 1 y el 4 a las esquinas y distrubuye 1 y 2*/
+    /*justify-content: space-around; /* coloca un espacio entre los hijos respoonsable dependiendo del tamaño de las pantallas */
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;  /* agrega una separacion entre los hijos */
+    flex-wrap: wrap;
+}    
+
+.hijo {
+    background: #ccc;
+    border: 5px solid red;
+    width: 100px;
+    height: 100px;
+}
